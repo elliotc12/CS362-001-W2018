@@ -45,7 +45,7 @@ public class TimeTable {
 	        GregorianCalendar nextDay = (GregorianCalendar) firstDay.clone();
 	        while (nextDay.before(lastDay)) {
 
-	            calDays.add(new CalDay(nextDay));
+	            calDays.add(new CalDay(lastDay));
 	            nextDay.add(nextDay.DAY_OF_MONTH, 1);
 	        }
 	        
